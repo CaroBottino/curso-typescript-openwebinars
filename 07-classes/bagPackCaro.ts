@@ -8,8 +8,8 @@ class MaxBagsReachedException2 extends Error {
 }
 
 class Item2 {
-    name: string;
-    category: string;
+    private name: string;
+    private category: string;
 
     constructor(name: string, category: string) {
         this.name = name;
@@ -22,15 +22,12 @@ class Item2 {
 }
 
 interface IContainer {
-    items: Item2[];
-    capacity: number;
-
-    add: (item: Item2) => void;
-    getCapacity: () => number;
+    add(item: Item2): void;
+    getCapacity(): number;
 }
 
 class Container2 implements IContainer {
-    items: Item2[];
+    private items: Item2[];
     capacity: number;
 
     constructor() {
@@ -46,7 +43,7 @@ class Container2 implements IContainer {
       this.items.push(item);
     }
   
-    getCapacity() {
+    getCapacity(): number {
       return this.capacity;
     }
 }
@@ -68,8 +65,8 @@ class Bag2 extends Container2 {
 }
 
 class Player2 {
-    bag: Container2;
-    bags: Container2[];
+    bag: IContainer;
+    bags: IContainer[];
 
     constructor(bag: Container2, bags: Container2[]) {
       this.bag = bag;
