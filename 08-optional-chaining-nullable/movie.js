@@ -9,28 +9,28 @@ const moviesSmall = [
 const moviesFull = [
   {
     title: 'Movie 1',
-    director: { name: 'Ridley Scott' },
-    actors: [{ name: 'Actor one' }, { name: 'Actor two' }],
+    director: { name: 'Ridley Scott 1' },
+    actors: [{ name: 'Actor one 1' }, { name: 'Actor two 1' }],
   },
   {
     title: 'Movie 2',
-    director: { name: 'Ridley Scott' },
-    actors: [{ name: 'Actor one' }, { name: 'Actor two' }],
+    director: { name: 'Ridley Scott 2' },
+    actors: [{ name: 'Actor one 2' }, { name: 'Actor two 2' }],
   },
   {
     title: 'Movie 3',
-    director: { name: 'Ridley Scott' },
-    actors: [{ name: 'Actor one' }, { name: 'Actor two' }],
+    director: { name: 'Ridley Scott 3' },
+    actors: [{ name: 'Actor one 3' }, { name: 'Actor two 3' }],
   },
   {
     title: 'Movie 4',
-    director: { name: 'Ridley Scott' },
-    actors: [{ name: 'Actor one' }],
+    director: { name: 'Ridley Scott 4' },
+    actors: [{ name: 'Actor one 4' }],
   },
   {
     title: 'Movie 5',
-    director: { name: 'Ridley Scott' },
-    actors: [{ name: 'Actor one' }],
+    director: { name: 'Ridley Scott 5' },
+    actors: [{ name: 'Actor one 5' }],
   },
 ];
 
